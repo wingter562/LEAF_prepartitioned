@@ -1,6 +1,8 @@
 # FL data prepartitioned
 Pre-partitioned small-scale datasets from public repositories (including [LEAF](https://leaf.cmu.edu/), [NIST](https://www.nist.gov/itl/products-and-services/emnist-dataset), [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html), etc.) for FL research.
 
+Pre-partitioned data are provided along with demo codes for data loading with PyTorch.
+
 Copyrights of the data are owned by the creators. 
 
 **Source data**: 
