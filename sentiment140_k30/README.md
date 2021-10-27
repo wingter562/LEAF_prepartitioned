@@ -10,7 +10,7 @@
 - Sampling source: full data (--sf 1.0)
 - User filter: number of samples >= 30 (-k 30)
 - Statistically distribution: non-IID as each user is a unique domain (-s niid)
-- Sampling results: number of users = 2875, number of samples = 146768
+- Sampling results: number of users = 2,875, number of training samples = 130,743, number of test samples = 16,025
 - Train/test split: 0.9/0.1
 
 **Data format**: three key-value pairs at the top hierarchy, tweets data in the 3rd key-value pair as a dictionary.
@@ -25,4 +25,6 @@
       - username (same as the key in the "user_data" dict), e.g., "sunshine_diva"
       - tweet text, e.g., "@faithgoddess7 I love the outdoors...but mostly in the Spring and Fall. Not too cold or too hot... "
       - train/test tag, e.g., "training"
-  - "y": the labels of the user's tweets as a list of binary values, e.g., \[1 1 1 1 1 1 1 1 1 1\].
+    - "y": the labels of the user's tweets as a list of binary values, e.g., \[1 1 1 1 1 1 1 1 1 1\].
+
+**Data loading demo**: see the [Sent140_loader_demo notebook](https://github.com/wingter562/LEAF_prepartitioned/tree/main/sentiment140_k30/Sent140_loader_demo.ipynb) for details.
