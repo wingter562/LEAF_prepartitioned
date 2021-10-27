@@ -16,8 +16,7 @@
 Alternatively, Pytorch users can directly load the EMNIST data using torchvision's APIs:
 ```
   import torchvision
-  transform = transforms.Compose([transforms.ToTensor(), 
-									transforms.Normalize((0.1307,), (0.3081,))])
+  transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
   data_train = tv_datasets.EMNIST(task_cfg.path, split='digits', train=True, download=True,
                                            transform=transform)
   data_test = tv_datasets.EMNIST(task_cfg.path, split='digits', train=False, download=True,
@@ -28,4 +27,4 @@ Alternatively, Pytorch users can directly load the EMNIST data using torchvision
 
 For a by-user partitioned EMNIST, see the [pre-partitioned FEMNIST dataset](https://github.com/wingter562/LEAF_prepartitioned/tree/main/femnist_sf02). 
 
-For a by-label partitioned EMNIST, one can use the same trick as in the [Dirichlet CIFAR dataset](https://github.com/wingter562/LEAF_prepartitioned/tree/main/EMNIST-digits).
+For a by-label partitioned EMNIST, one can use the same trick as in the [Dirichlet CIFAR dataset](https://github.com/wingter562/LEAF_prepartitioned/tree/main/CIFAR_Dirichlet).

@@ -19,3 +19,5 @@
 	- "user id" (e.g., "f3388_36"): 
 		- "x": the users' flattened images as an 2D array, x.shape = (N, 784=28x28)
 		- "y": the labels as a list, length = N
+
+**Data loading demo**: see the [FEMNIST_loader_demo notebook](https://github.com/wingter562/LEAF_prepartitioned/blob/main/femnist_sf02/FEMNIST_loader_demo.ipynb) for details.
